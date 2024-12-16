@@ -2,7 +2,7 @@
 
 ## Descripción
 
-**Task Manager** es una aplicación desarrollada en Python para gestionar tareas diarias. Los usuarios pueden agregar, listar, completar, eliminar tareas y exportarlas en formato JSON. La aplicación cuenta con dos interfaces disponibles: una interfaz de línea de comandos (CLI) y una interfaz gráfica (GUI) utilizando Tkinter. Además, se conecta a una base de datos MySQL para persistencia de datos.
+**Task Manager** es una aplicación desarrollada en Python para gestionar tareas diarias. Los usuarios pueden agregar, listar, completar, eliminar tareas y exportarlas en formato JSON. La aplicación cuenta con dos interfaces disponibles: una interfaz de línea de comandos (CLI) y una interfaz gráfica (GUI) utilizando Tkinter. Además, se conecta a una base de datos PostgreSQL para persistencia de datos.
 
 ---
 
@@ -16,7 +16,7 @@
 6. **Interfaz Dual**:
    - **CLI**: Para usuarios que prefieren la línea de comandos.
    - **GUI**: Interfaz gráfica amigable desarrollada con Tkinter.
-7. **Conexión a MySQL**: Almacena las tareas en una base de datos MySQL para garantizar la persistencia.
+7. **Conexión a PostgreSQL**: Almacena las tareas en una base de datos PostgreSQL para garantizar la persistencia.
 
 ---
 
@@ -27,7 +27,7 @@ El proyecto utiliza las siguientes dependencias:
 - **Python 3.8+**
 - **Tkinter** (incluido con Python)
 - **SQLAlchemy** (para la gestión de la base de datos)
-- **PyMySQL** (para la conexión con MySQL)
+- **psycopg2** (para la conexión con PostgreSQL)
 
 Instalarlas con:
 
@@ -39,7 +39,8 @@ Contenido del archivo `requirements.txt`:
 
 ```
 sqlalchemy
-pymysql
+tk
+psycopg2
 ```
 
 ---

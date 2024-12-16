@@ -1,8 +1,7 @@
 1. Estructura del Proyecto
 Usaremos un diseño modular, separando la lógica de la aplicación, el manejo de datos y la interfaz:
 
-bash
-Copy code
+```
 task_manager/
 ├── app.py                # Punto de entrada principal.
 ├── models/
@@ -21,9 +20,15 @@ task_manager/
 │   ├── file_manager.py   # Manejo de exportación/importación de tareas.
 ├── requirements.txt      # Dependencias del proyecto.
 └── README.md             # Documentación del proyecto.
+```
+
+
+
+
 2. Instalación de Dependencias
 Primero, asegurémonos de tener SQLAlchemy instalado. Además, instalaremos otras herramientas necesarias si usamos interfaces gráficas.
 
-bash
-Copy code
+```
 pip install sqlalchemy
+```
+

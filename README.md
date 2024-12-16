@@ -77,21 +77,13 @@ task_manager/
 Clona el repositorio a tu máquina local:
 
 ```bash
-git clone <url_del_repositorio>
+git clone https://github.com/Andolon-M/Task_manager.git
 cd task_manager
 ```
 
 ### 2. Configurar la Base de Datos
 
-Asegúrate de tener un servidor MySQL en ejecución. Crea una base de datos llamada `task_manager_db`.
-
-Actualiza la configuración en `models/database.py`:
-
-```python
-DATABASE_URL = "mysql+pymysql://user:password@localhost/task_manager_db"
-```
-
-Reemplaza `user` y `password` con tus credenciales de MySQL.
+Asegúrate de tener un servidor posgres sql y colocar la url de coneccion en el archivo models/database.py
 
 ### 3. Instalar Dependencias
 
@@ -101,15 +93,7 @@ Instala las dependencias necesarias:
 pip install -r requirements.txt
 ```
 
-### 4. Inicializar la Base de Datos
-
-Ejecuta el siguiente comando para inicializar las tablas:
-
-```python
-python -c "from models.database import init_db; init_db()"
-```
-
-### 5. Ejecutar la Aplicación
+### 4. Ejecutar la Aplicación
 
 - Para la interfaz de línea de comandos (CLI):
 
@@ -162,15 +146,6 @@ El archivo `tasks.json` se genera en la raíz del proyecto con la estructura:
 
 ---
 
-## Contribuciones
 
-Si deseas contribuir, por favor sigue los pasos:
 
-1. Haz un fork del repositorio.
-2. Crea una rama con tu función: `git checkout -b feature/nueva-funcion`.
-3. Haz commit de tus cambios: `git commit -m 'Agregada nueva función'`.
-4. Haz push a la rama: `git push origin feature/nueva-funcion`.
-5. Abre un Pull Request.
-
----
 

@@ -4,11 +4,11 @@ from models.database import init_db, SessionLocal
 from controllers.task_controller import add_task, list_tasks, complete_task, delete_completed_tasks
 from utils.file_manager import export_tasks_to_json
 
-def start_gui():
-    # Inicializa la base de datos
-    init_db()
-    db = SessionLocal()
+# Inicializa la base de datos
+init_db()
+db = SessionLocal()
 
+def start_gui():
     # Crear la ventana principal
     root = tk.Tk()
     root.title("Task Manager")
